@@ -30,7 +30,7 @@ nginx_sites:
      proxy_next_upstream_tries: 1
      proxy_read_timeout: 900s
     location4:
-     name: "~* /a/[^/]+/apps/download/[a-z0-9]/(profile|suite).xml"
+     name: "~* /a/[^/]+/apps/download/[a-z0-9]+/(profile|suite).xml"
      balancer: webworkers
      proxy_next_upstream_tries: 1
      proxy_read_timeout: 900s
